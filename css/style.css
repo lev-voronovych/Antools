@@ -1,0 +1,9 @@
+:root{
+    --main-background-color: #1E252B;
+    --main-text-color: rgba(255, 255, 255, 0.90);
+    --second-text-color: rgba(255, 255, 255, 0.55);
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
