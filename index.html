@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <a href="#" class="header-logo"><img src="./зображення/logo-black.png" alt="logo-antools ">antools.</a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -26,9 +29,9 @@
                 </ul>
             </nav>
             <ul class="authorization-list">
-                <li class="authorization-item"><a href="#">Login</a></li>
+                <li class="authorization-item"><button class="authorization-button" type="button">Login</button></li>
                 <li class="authorization-item">
-                    <button type="button" class="authorization-button">Sign Up</button>
+                    <button type="button" class="authorization-button" type="button">Sign Up</button>
                 </li>
             </ul>
         </div>
@@ -36,13 +39,16 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-                <p class="hero-text">Antool is a web collection of information on paid or free Design and Development
+                <h1 class="hero-title">Awesome tools for <br> Designer & Developer.</h1>
+                <p class="hero-text">Antool is a web collection of information on paid or <br> free Design and
+                    Development
                     tools</p>
-                <input class="hero-Input" type="text" id="hero-Input" name="hero-Input"
-                    placeholder="more than 430+ tools...">
-                <button class="hero-submit" type="submit">Search</button>
-                <ul>
+                <form action="" class="hero-form">
+                    <input class="hero-input" type="text" id="hero-Input" name="hero-Input"
+                        placeholder="more than 430+ tools...">
+                    <button class="hero-submit" type="submit">Search</button>
+                </form>
+                <ul class="hero-list">
                     <li class="hero-social"><a href="#" class="social-link"><img class="social-img"
                                 src="./зображення/bx_bxl-facebook.png" alt="logo-facebook"></a></li>
                     <li class="hero-social"><a href="#" class="social-link"><img class="social-img"
@@ -52,109 +58,135 @@
                 </ul>
             </div>
         </section>
-        <section class="mpt-section">
+        <section class="popular-section">
             <div class="container">
-                <h2 class="mpt-title">Most Popular Tools</h2>
-                <p class="mpt-text">Tools for the best Designers and Developers most popularly used in the world</p>
-                <ul class="mpt-list">
-                    <li class="mpt-card">
-                        <img class="mpt-img" src="./зображення/logo-figma.png" alt="figma logo">
-                        <h3 class="mtp-subtitle">FIGMA</h3>
-                        <p class="mpt-status">Free</p>
-                        <p class="mpt-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="popular-title">Most Popular Tools</h2>
+                <p class="popular-text">Tools for the best Designers and Developers <br> most popularly used in the
+                    world</p>
+                <ul class="popular-list">
+                    <li class="popular-card">
+                        <div class="popular-div">
+                            <img class="popular-img" src="./зображення/logo-figma.png" alt="figma logo">
+                            <h3 class="popular-subtitle">FIGMA</h3>
+                            <p class="popular-status">Free</p>
+                        </div>
+                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
                         <button type="button" class="mpt-visit">Visit</button>
                     </li>
-                    <li class="mpt-card">
-                        <img class="mpt-img" src="./зображення/logos_sketch.png" alt="sketch logo">
-                        <h3 class="mtp-subtitle">Sketch</h3>
-                        <p class="mpt-status">Trial & Paid</p>
-                        <p class="mpt-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button type="button" class="mpt-visit">Visit</button>
+                    <li class="popular-card">
+                        <div class="popular-div">
+                            <img class="popular-img" src="./зображення/logos_sketch.png" alt="sketch logo">
+                            <h3 class="popular-subtitle">Sketch</h3>
+                            <p class="popular-status">Trial & Paid</p>
+                        </div>
+                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <button type="button" class="popular-visit">Visit</button>
                     </li>
-                    <li class="mpt-card">
-                        <img class="mpt-img" src="./зображення/logos_visual-studio-code (1).png"
-                            alt="visual studio code">
-                        <h3 class="mtp-subtitle">Visual Studio Code</h3>
-                        <p class="mpt-status">Free</p>
-                        <p class="mpt-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button type="button" class="mpt-visit">Visit</button>
+                    <li class="popular-card">
+                        <div class="popular-div">
+                            <img class="popular-img" src="./зображення/logos_visual-studio-code (1).png"
+                                alt="visual studio code">
+                            <h3 class="popular-subtitle">Visual Studio Code</h3>
+                            <p class="popular-status">Free</p>
+                        </div>
+                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <button type="button" class="popular-visit">Visit</button>
                     </li>
-                    <li class="mpt-card">
-                        <img class="mpt-img" src="./зображення/notion.png" alt="notion logo">
-                        <h3 class="mtp-subtitle">Notion</h3>
-                        <p class="mpt-status">Free & Paid</p>
-                        <p class="mpt-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button type="button" class="mpt-visit">Visit</button>
+                    <li class="popular-card">
+                        <div class="popular-div">
+                            <img class="popular-img" src="./зображення/notion.png" alt="notion logo">
+                            <h3 class="popular-subtitle">Notion</h3>
+                            <p class="popular-status">Free & Paid</p>
+                        </div>
+                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <button type="button" class="popular-visit">Visit</button>
                     </li>
-                    <li class="mpt-card">
-                        <img class="mpt-img" src="./зображення/logo-slack.png" alt="slack logo">
-                        <h3 class="mtp-subtitle">Slack</h3>
-                        <p class="mpt-status">Free & Paid</p>
-                        <p class="mpt-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button type="button" class="mpt-visit">Visit</button>
+                    <li class="popular-card">
+                        <div class="popular-div">
+                            <img class="popular-img" src="./зображення/logo-slack.png" alt="slack logo">
+                            <h3 class="popular-subtitle">Slack</h3>
+                            <p class="popular-status">Free & Paid</p>
+                        </div>
+                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <button type="button" class="popular-visit">Visit</button>
                     </li>
-                    <li class="mpt-card">
-                        <img class="mpt-img" src="./зображення/logos_invision-icon (1).png" alt="Invision logo">
-                        <h3 class="mtp-subtitle">Invision</h3>
-                        <p class="mpt-status">Free & Paid</p>
-                        <p class="mpt-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button type="button" class="mpt-visit">Visit</button>
+                    <li class="popular-card">
+                        <div class="popular-div">
+                            <img class="popular-img" src="./зображення/logos_invision-icon (1).png" alt="Invision logo">
+                            <h3 class="popular-subtitle">Invision</h3>
+                            <p class="popular-status">Free & Paid</p>
+                        </div>
+                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <button type="button" class="popular-visit">Visit</button>
                     </li>
                 </ul>
-                <button type="button" class="mpt-button">Load more</button>
+                <a href="popular-link"></a>
             </div>
         </section>
-        <section class="support">
-            <div class="container">
-                <h4 class="support-title">Trusted more than 150+ brand</h4>
-                <ul class="support-list">
-                    <li class="support-item"><img class="support-img" src="./зображення/logos_microsoft.png"
+        <section class="brands">
+            <div class="container brands-container">
+                <h4 class="brands-title">Trusted more than 150+ brand</h4>
+                <ul class="brands-list">
+                    <li class="brands-item"><img class="brands-img" src="./зображення/logos_microsoft.png"
                             alt="microsoft logo"></li>
-                    <li class="support-item"><img class="support-img" src="./зображення/logos_google (1).png"
+                    <li class="brands-item"><img class="brands-img" src="./зображення/logos_google.png"
                             alt="google logo"></li>
-                    <li class="support-item"><img class="support-img" src="./зображення/logos_slack.png"
-                            alt="slack logo"></li>
-                    <li class="support-item"><img class="support-img" src="./зображення/logos_wordpress (1).png"
+                    <li class="brands-item"><img class="brands-img" src="./зображення/logos_slack.png" alt="slack logo">
+                    </li>
+                    <li class="brands-item"><img class="brands-img" src="./зображення/logos_wordpress.png"
                             alt="word press logo"></li>
                 </ul>
             </div>
         </section>
-        <section class="Newcomer">
+        <section class="newcomer">
             <div class="container">
-                <h4 class="newcomer-title">Newcomer Tools</h4>
+                <h2 class="newcomer-title">Newcomer Tools</h2>
                 <p class="newcomer-text">Wow! see the latest update of the most recommended tools from reliable
                     designers and developers</p>
-                <button class="newcomer-button" type="button"></button>
+                <button class="newcomer-button" type="button">Explore more</button>
                 <ul class="newcomer-list">
                     <li class="newcomer-card">
                         <img class="newcomer-img" src="" alt="">
-                        <h4 class="newcomer-subtitle"></h4>
+                        <h3 class="newcomer-subtitle">Zeplin</h3>
                         <p class="newcomer-status">Free & Paid</p>
                         <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button class="newcomer-visit">visit</button>
                     </li>
                     <li class="newcomer-card">
                         <img class="newcomer-img" src="" alt="">
-                        <h4 class="newcomer-subtitle"></h4>
+                        <h3 class="newcomer-subtitle">PHPStorm</h3>
                         <p class="newcomer-status">Free</p>
                         <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button class="newcomer-visit">visit</button>
                     </li>
                     <li class="newcomer-card">
                         <img class="newcomer-img" src="" alt="">
-                        <h4 class="newcomer-subtitle"></h4>
+                        <h3 class="newcomer-subtitle">Toolbox</h3>
                         <p class="newcomer-status">Free</p>
                         <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button class="newcomer-visit">visit</button>
                     </li>
                     <li class="newcomer-card">
                         <img class="newcomer-img" src="" alt="">
-                        <h4 class="newcomer-subtitle"></h4>
+                        <h3 class="newcomer-subtitle">Procreate</h3>
                         <p class="newcomer-status">Paid</p>
                         <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button class="newcomer-visit">visit</button>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="meneger">
+            <div class="container">
+                <!--piznizhe-->
+            </div>
+        </section>
+        <section class="bac">
+            <div class="container">
+                <h4 class="bac-titke">Become a contributor?</h4>
+                <p class="bac-text">Join us and get tips & tricks to become a great Designer and Developer</p>
+                <input type="text" placeholder="Enter your email...">
+                <button class="bac-button" type="submit"> Join Us</button>
             </div>
         </section>
     </main>

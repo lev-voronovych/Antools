@@ -6,7 +6,7 @@ p {
     padding: 0;
 }
 
-ul {
+ul{
     padding: 0;
     margin: 0;
     list-style: none;
@@ -19,10 +19,4 @@ a {
 button {
     border: none;
     cursor: pointer;
-}
-
-img {
-    display: block;
-    height: auto;
-    max-width: 100%;
 }
