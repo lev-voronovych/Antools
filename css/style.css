@@ -157,6 +157,9 @@ main {
 }
 
 .popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 48px) \ 3);
     margin-top: 90px;
     gap: 24px;
 }
@@ -168,7 +171,6 @@ main {
 
 .popular-box {
     margin: 0 33px;
-    margin-bottom: 30px;
     display: flex;
 }
 
@@ -189,26 +191,31 @@ main {
 }
 
 .popular-subtext {
-    margin: 0 33px;
+    margin: 30px 33px;
     color: rgba(255, 255, 255, 0.55);
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
 }
-.popular-btn-box{
-margin: 0 33px;
-}
-.popular-like{
-    width: 42px;
-        height: 42px;
-        background-color: var(--main-background-color);
+
+.popular-btn-box {
+    display: flex;
+    margin: 0 33px;
+    justify-content: space-between;
 }
 
-.popular-folder{
+.popular-like {
+    margin-right: 12px;
     width: 42px;
-        height: 42px;
-        background-color: var(--main-background-color);
-    }
+    height: 42px;
+    background-color: var(--main-background-color);
+}
+
+.popular-folder {
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-background-color);
+}
 
 
 .popular-visit {
