@@ -80,6 +80,8 @@ main {
 }
 
 .hero-text {
+    margin-top: 30px;
+    margin-bottom: 60px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -159,8 +161,64 @@ main {
     gap: 24px;
 }
 
-.popular-div {
+.popular-card {
+    width: 392px;
+    height: 294px;
+}
+
+.popular-box {
+    margin: 0 33px;
+    margin-bottom: 30px;
     display: flex;
+}
+
+.popular-img {
+    margin-right: 30px;
+}
+
+.popular-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.popular-status {
+    color: rgba(255, 165, 55, 0.55);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.popular-subtext {
+    margin: 0 33px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.popular-btn-box{
+margin: 0 33px;
+}
+.popular-like{
+    width: 42px;
+        height: 42px;
+        background-color: var(--main-background-color);
+}
+
+.popular-folder{
+    width: 42px;
+        height: 42px;
+        background-color: var(--main-background-color);
+    }
+
+
+.popular-visit {
+    width: 106px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: var(--main-background-color);
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .brands {
