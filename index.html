@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <script src="./script.js"></script>
 </head>
 
 <body>
@@ -49,12 +50,12 @@
                         placeholder="more than 430+ tools...">
                     <button class="hero-submit" type="submit">Search</button>
                 </form>
-                <ul class="hero-list">
-                    <li class="hero-social"><a href="#" class="social-link"><img class="social-img"
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link"><img class="social-img"
                                 src="./зображення/icon-facebook.png" alt="logo-facebook"></a></li>
-                    <li class="hero-social"><a href="#" class="social-link"><img class="social-img"
+                    <li class="social-item"><a href="#" class="social-link"><img class="social-img"
                                 src="./зображення/icon-instagram.png" alt="logo-instagram"></a></li>
-                    <li class="hero-social"><a href="#" class="social-link"><img class="social-img"
+                    <li class="social-item"><a href="#" class="social-link"><img class="social-img"
                                 src="./зображення/icon-twitter.png" alt="logo-twitter"></a></li>
                 </ul>
             </div>
@@ -73,7 +74,7 @@
                                 <p class="popular-status">Free</p>
                             </div>
                         </div>
-                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+                        <p class="popular-desc">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
                         <div class="popular-btn-box">
                             <div class="popular-img-box">
                                 <button class="popular-like"><img src="./зображення/like.png" alt="like"></button>
@@ -91,7 +92,7 @@
                                 <p class="popular-status">Trial & Paid</p>
                             </div>
                         </div>
-                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <p class="popular-desc">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
                                 <div class="popular-btn-box">
                             <div class="popular-img-box">
                                 <button class="popular-like"><img src="./зображення/like.png" alt="like"></button>
@@ -110,7 +111,7 @@
                                 <p class="popular-status">Free</p>
                             </div>
                         </div>
-                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <p class="popular-desc">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
                         <div class="popular-btn-box">
                             <div class="popular-img-box">
                                 <button class="popular-like"><img src="./зображення/like.png" alt="like"></button>
@@ -127,7 +128,7 @@
                                 <p class="popular-status">Free & Paid</p>
                             </div>
                         </div>
-                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <p class="popular-desc">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
                         <div class="popular-btn-box">
                             <div class="popular-img-box">
                                 <button class="popular-like"><img src="./зображення/like.png" alt="like"></button>
@@ -144,7 +145,7 @@
                                 <p class="popular-status">Free & Paid</p>
                             </div>
                         </div>
-                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <p class="popular-desc">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
                         <div class="popular-btn-box">
                             <div class="popular-img-box">
                                 <button class="popular-like"><img src="./зображення/like.png" alt="like"></button>
@@ -162,7 +163,7 @@
                                 <p class="popular-status">Free & Paid</p>
                             </div>
                         </div>
-                        <p class="popular-subtext">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                        <p class="popular-desc">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
                         <div class="popular-btn-box">
                             <div class="popular-img-box">
                                 <button class="popular-like"><img src="./зображення/like.png" alt="like"></button>
@@ -190,55 +191,128 @@
                 </ul>
             </div>
         </section>
-        <section class="newcomer">
+        <section class="new-tools">
             <div class="container">
-                <h2 class="newcomer-title">Newcomer Tools</h2>
-                <p class="newcomer-text">Wow! see the latest update of the most recommended tools from reliable
+                <h2 class="new-tools-title">Newcomer Tools</h2>
+                <p class="new-tools-text">Wow! see the latest update of the most recommended tools from reliable
                     designers and developers</p>
-                <button class="newcomer-button" type="button">Explore more</button>
-                <ul class="newcomer-list">
-                    <li class="newcomer-card">
-                        <img class="newcomer-img" src="" alt="">
-                        <h3 class="newcomer-subtitle">Zeplin</h3>
-                        <p class="newcomer-status">Free & Paid</p>
-                        <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="newcomer-visit">visit</button>
+                <button class="new-tools-button" type="button">Explore more</button>
+                <ul class="new-tools-list">
+                    <li class="new-tools-card">
+                        <img class="new-tools-img" src="" alt="">
+                        <h3 class="new-tools-subtitle">Zeplin</h3>
+                        <p class="new-tools-status">Free & Paid</p>
+                        <p class="new-tools-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="new-tools-visit">visit</button>
                     </li>
-                    <li class="newcomer-card">
-                        <img class="newcomer-img" src="" alt="">
-                        <h3 class="newcomer-subtitle">PHPStorm</h3>
-                        <p class="newcomer-status">Free</p>
-                        <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="newcomer-visit">visit</button>
+                    <li class="new-tools-card">
+                        <img class="new-tools-img" src="" alt="">
+                        <h3 class="new-tools-subtitle">PHPStorm</h3>
+                        <p class="new-tools-status">Free</p>
+                        <p class="new-tools-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="new-tools-visit">visit</button>
                     </li>
-                    <li class="newcomer-card">
-                        <img class="newcomer-img" src="" alt="">
-                        <h3 class="newcomer-subtitle">Toolbox</h3>
-                        <p class="newcomer-status">Free</p>
-                        <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="newcomer-visit">visit</button>
+                    <li class="new-tools-card">
+                        <img class="new-tools-img" src="" alt="">
+                        <h3 class="new-tools-subtitle">Toolbox</h3>
+                        <p class="new-tools-status">Free</p>
+                        <p class="new-tools-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="new-tools-visit">visit</button>
                     </li>
-                    <li class="newcomer-card">
-                        <img class="newcomer-img" src="" alt="">
-                        <h3 class="newcomer-subtitle">Procreate</h3>
-                        <p class="newcomer-status">Paid</p>
-                        <p class="newcomer-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="newcomer-visit">visit</button>
+                    <li class="new-tools-card">
+                        <img class="new-tools-img" src="" alt="">
+                        <h3 class="new-tools-subtitle">Procreate</h3>
+                        <p class="new-tools-status">Paid</p>
+                        <p class="new-tools-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="new-tools-visit">visit</button>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="meneger">
+        <section class="reviews">
             <div class="container">
+                <div class="container reviews-container">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide reviews-box">
+                <div class="reviews-wrap">
+                  <img
+                    src="./images/review-img-1.png"
+                    alt="Review creator "
+                    width="392"
+                  />
+                  <div class="reviews-info">
+                    <p class="reviews-mane">Ronald Richards</p>
+                    <p class="reviews-position">Product Manager</p>
+                  </div>
+                </div>
+
+                <p class="reviews-text">
+                  Incididunt cillum do sint sint enim ullamco id deserunt mollit
+                  qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
+                  Do nulla velit labore occaecat do deserunt Lorem magna officia
+                  incididunt consectetur amet. Sunt consectetur veniam minim ex
+                  commodo sint non. Occaecat aute officia excepteur non laboris
+                  id qui ad.
+                </p>
+              </div>
+              <div class="swiper-slide reviews-box">
+                <div class="reviews-wrap">
+                  <img src="/images/review-img-2.png" alt="Review creator " />
+                  <div class="reviews-info">
+                    <p class="reviews-mane">Julia Kriwald</p>
+                    <p class="reviews-position">HR spesialist</p>
+                  </div>
+                </div>
+
+                <p class="reviews-text">
+                  Incididunt cillum do sint sint enim ullamco id deserunt mollit
+                  qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
+                  Do nulla velit labore occaecat do deserunt Lorem magna officia
+                  incididunt consectetur amet. Sunt consectetur veniam minim ex
+                  commodo sint non. Occaecat aute officia excepteur non laboris
+                  id qui ad.
+                </p>
+              </div>
+              <div class="swiper-slide reviews-box">
+                <div class="reviews-wrap">
+                  <img
+                    src="./images/review-img-3.png"
+                    alt="Review creator "
+                    width="392"
+                  />
+                  <div class="reviews-info">
+                    <p class="reviews-mane">John Mckenzie</p>
+                    <p class="reviews-position">Designer Manager</p>
+                  </div>
+                </div>
+
+                <p class="reviews-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore repellat accusamus praesentium ducimus. Hic quasi ipsa
+                  obcaecati temporibus odit provident asperiores veniam sint
+                  soluta, distinctio perferendis laboriosam odio nulla officia?
+                </p>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
                 <!--piznizhe-->
             </div>
         </section>
-        <section class="bac">
+        <section class="contributors">
             <div class="container">
-                <h4 class="bac-titke">Become a contributor?</h4>
-                <p class="bac-text">Join us and get tips & tricks to become a great Designer and Developer</p>
+                <h4 class="contributors-titke">Become a contributor?</h4>
+                <p class="contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
                 <input type="text" placeholder="Enter your email...">
-                <button class="bac-button" type="submit"> Join Us</button>
+                <button class="contributors-button" type="submit"> Join Us</button>
             </div>
         </section>
     </main>
@@ -246,7 +320,7 @@
         <div class="container">
             <a class="footer-logo" href="#"> <img src="./зображення/logo-orange.png" alt="logo-antools">antools.</a>
             <p class="footer-text">Copyright 2021. Antools</p>
-            <p class="footer-subtext">
+            <p class="footer-definition">
                 Antool is a web collection of information on paid or free Design and
                 Development tools
             </p>

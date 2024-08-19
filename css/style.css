@@ -102,6 +102,7 @@ main {
 .hero-input {
     flex: 1;
     font-size: 14px;
+    font-weight: 400;
     border: none;
     outline: none;
     color: var(--second-text-color);
@@ -129,7 +130,7 @@ main {
 }
 
 
-.hero-list {
+.social-list {
     margin-top: 110px;
     display: flex;
     gap: 20px;
@@ -159,12 +160,12 @@ main {
 .popular-list {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 48px) \ 3);
     margin-top: 90px;
     gap: 24px;
 }
 
 .popular-card {
+    flex-basis: calc((100% - 48px) \ 3);
     width: 392px;
     height: 294px;
 }
@@ -190,7 +191,7 @@ main {
     font-weight: 400;
 }
 
-.popular-subtext {
+.popular-desc {
     margin: 30px 33px;
     color: rgba(255, 255, 255, 0.55);
     font-size: 16px;
