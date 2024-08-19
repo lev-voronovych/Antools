@@ -95,7 +95,7 @@ main {
     width: 498px;
     border-radius: 15px;
     border: 1.5px solid rgba(255, 255, 255, 0.1);
-    background-color: #2a2a2a;
+    background-color: #283036;
     /*border-color: 1.5 var(--border-color);*/
 }
 
@@ -164,6 +164,15 @@ main {
     gap: 24px;
 }
 
+.popular-card:hover{
+    background-color: var(--second-background-color);
+    width: 392px;
+        height: 294px;
+        border-radius: 15px;
+}
+.popular-card:hover .popular-visit{
+    background-color: var(--button-background-color);
+}
 .popular-card {
     flex-basis: calc((100% - 48px) \ 3);
     width: 392px;
@@ -177,9 +186,11 @@ main {
 
 .popular-img {
     margin-right: 30px;
+        margin-top: 34px;
 }
 
 .popular-subtitle {
+        margin-top: 34px;
     font-size: 24px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.78);
@@ -252,4 +263,133 @@ main {
     margin-top: 55px;
     justify-content: center;
     gap: 107px;
+}
+
+.contributors {
+    padding-bottom: 240px;
+}
+
+.contributors-title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    color: var(--main-text-color);
+}
+
+.contributor-text {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--second-text-color);
+}
+
+.contributor-box {
+    display: flex;
+    padding: 12px 8px;
+    width: 549px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    background-color: #283036;
+}
+
+.contributor-input {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: var(--second-text-color);
+    background-color: transparent;
+}
+
+.contributors-button {
+    width: 130px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: var(--accent-text-color);
+    background-color: var(--button-background-color);
+}
+
+.footer-container {
+    display: flex;
+    padding-bottom: 98px;
+} 
+
+.footer-logo-img{
+    margin-right: 12px;
+}
+
+.footer-logo{
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--main-text-color);
+}
+
+.footer-text{
+    margin-top: 27px;
+    margin-bottom: 21px;
+        font-size: 16px;
+        font-weight: 500;
+color: var(--main-text-color);
+}
+
+.footer-definition{
+margin-right: 156px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--second-text-color);
+}
+
+.list-box {
+    display: flex;
+    gap: 115px;
+}
+
+.address-subtitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.Categories-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.info-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.address-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--second-text-color);
+}
+
+.Categories-link{
+    font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: var(--second-text-color);
+}
+
+.info-link{
+    font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: var(--second-text-color);
 }
