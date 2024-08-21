@@ -33,6 +33,10 @@ body {
     align-items: center;
 }
 
+.header-img-logo {
+    margin-right: 21px;
+}
+
 .header-logo {
     font-size: 22px;
     font-weight: 600;
@@ -42,6 +46,10 @@ body {
 .nav-list {
     display: flex;
     gap: 25px;
+}
+
+.nav-link:hover {
+    color: var(--button-background-color);
 }
 
 
@@ -54,6 +62,26 @@ body {
 
 .authorization-list {
     display: flex;
+}
+
+.login-button {
+    width: 118px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--main-background-color);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sign-button {
+    width: 118px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--button-background-color);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 main {
@@ -77,6 +105,10 @@ main {
     font-size: 50px;
     font-weight: 500;
     line-height: 140%;
+}
+
+.hero-dot{
+    color: var(--button-background-color);
 }
 
 .hero-text {
@@ -136,6 +168,11 @@ main {
     gap: 20px;
 }
 
+.social-img{
+    width: 36px;
+    height: 36px;
+}
+
 .popular-section {
     padding: 200px 0;
 }
@@ -161,36 +198,34 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 90px;
-    gap: 24px;
+    row-gap: 24px;
+    column-gap: 100px;
 }
 
-.popular-card:hover{
+.popular-card:hover {
     background-color: var(--second-background-color);
-    width: 392px;
-        height: 294px;
-        border-radius: 15px;
+    border-radius: 15px;
 }
-.popular-card:hover .popular-visit{
+
+.popular-card:hover .popular-visit {
     background-color: var(--button-background-color);
 }
+
 .popular-card {
     flex-basis: calc((100% - 48px) \ 3);
-    width: 392px;
-    height: 294px;
+    padding: 33px;
 }
 
 .popular-box {
-    margin: 0 33px;
     display: flex;
 }
 
 .popular-img {
     margin-right: 30px;
-        margin-top: 34px;
 }
 
+
 .popular-subtitle {
-        margin-top: 34px;
     font-size: 24px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.78);
@@ -203,7 +238,7 @@ main {
 }
 
 .popular-desc {
-    margin: 30px 33px;
+    margin: 30px 0px;
     color: rgba(255, 255, 255, 0.55);
     font-size: 16px;
     font-weight: 400;
@@ -212,20 +247,15 @@ main {
 
 .popular-btn-box {
     display: flex;
-    margin: 0 33px;
     justify-content: space-between;
 }
 
 .popular-like {
     margin-right: 12px;
-    width: 42px;
-    height: 42px;
     background-color: var(--main-background-color);
 }
 
 .popular-folder {
-    width: 42px;
-    height: 42px;
     background-color: var(--main-background-color);
 }
 
@@ -238,6 +268,19 @@ main {
     color: rgba(255, 255, 255, 0.55);
     font-size: 16px;
     font-weight: 600;
+}
+
+.popular-Load-more {
+    margin-top: 100px;
+    margin-left: 520px;
+    color: var(--button-background-color);
+    font-size: 20px;
+    font-weight: 500;
+    width: 184px;
+    height: 64px;
+    border-radius: 8px;
+    border-color: 1px var(--border-color);
+    background-color: var(--main-background-color);
 }
 
 .brands {
@@ -289,6 +332,7 @@ main {
 
 .contributor-box {
     display: flex;
+    margin-left: 326px;
     padding: 12px 8px;
     width: 549px;
     border-radius: 15px;
@@ -319,47 +363,48 @@ main {
 .footer-container {
     display: flex;
     padding-bottom: 98px;
-} 
+}
 
-.footer-logo-img{
+.footer-logo-img {
     margin-right: 12px;
 }
 
-.footer-logo{
-        font-size: 22px;
-        font-weight: 600;
-        color: var(--main-text-color);
+.footer-logo {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--main-text-color);
 }
 
-.footer-text{
+.footer-text {
     margin-top: 27px;
     margin-bottom: 21px;
-        font-size: 16px;
-        font-weight: 500;
-color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-text-color);
 }
 
-.footer-definition{
-margin-right: 156px;
+.footer-definition {
+    margin-right: 156px;
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
     color: var(--second-text-color);
 }
 
-.list-box {
+.footer-wrap {
     display: flex;
     gap: 115px;
 }
 
-.address-subtitle {
+.contact-title {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
     color: var(--main-text-color);
 }
 
-.Categories-title {
+.categories-title {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -373,23 +418,23 @@ margin-right: 156px;
     color: var(--main-text-color);
 }
 
-.address-link {
+.contact-link {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: var(--second-text-color);
 }
 
-.Categories-link{
+.categories-item {
     font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        color: var(--second-text-color);
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--second-text-color);
 }
 
-.info-link{
+.info-item {
     font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        color: var(--second-text-color);
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--second-text-color);
 }
