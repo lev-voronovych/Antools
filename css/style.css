@@ -35,13 +35,14 @@ body {
 }
 
 .header-img-logo {
-    margin-right: 21px;
+    margin-right: 15px;
 }
 
 .header-logo {
     font-size: 22px;
     font-weight: 600;
-    line-height: 1.5 color: var(--main-text-color);
+    line-height: 1.5 ;
+    color: var(--main-text-color);
 }
 
 .nav-list {
@@ -66,9 +67,7 @@ body {
     display: flex;
 }
 
-.login-button:hover {
-    color: var(--accent-hover-color);
-}
+
 
 .login-button {
     transition: color 0.3s ease;
@@ -80,9 +79,8 @@ body {
     font-weight: 600;
 }
 
-.sign-button:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-   
+.login-button:hover {
+    color: var(--button-background-color);
 }
 
 .sign-button {
@@ -94,6 +92,11 @@ body {
     color: rgba(255, 255, 255, 0.78);
     font-size: 16px;
     font-weight: 600;
+}
+
+.sign-button:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+
 }
 
 main {
@@ -168,11 +171,6 @@ main {
     color: var(--second-text-color);
 }*/
 
-.hero-submit:hover{
-color: var(--button-background-color);
-outline: 1px solid var(--accent-color);
-background-color: transparent;
-}
 
 .hero-submit {
     transition: color 0.3s ease;
@@ -181,11 +179,15 @@ background-color: transparent;
     font-size: 16px;
     font-weight: 600;
     border-radius: 8px;
-    color: var(--accent-color);
     color: var(--accent-text-color);
     background-color: var(--button-background-color);
 }
 
+.hero-submit:hover {
+    color: var(--button-background-color);
+    outline: 1px solid var(--button-background-color);
+    background-color: transparent;
+}
 
 .social-list {
     margin-top: 110px;
@@ -224,6 +226,15 @@ background-color: transparent;
     column-gap: 25px;
 }
 
+
+
+
+
+.popular-card {
+    flex-basis: calc((100% - 50px) / 3);
+    padding: 33px;
+}
+
 .popular-card:hover {
     background-color: var(--second-background-color);
     border-radius: 15px;
@@ -231,11 +242,6 @@ background-color: transparent;
 
 .popular-card:hover .popular-visit {
     background-color: var(--button-background-color);
-}
-
-.popular-card {
-    flex-basis: calc((100% - 50px) / 3);
-    padding: 33px;
 }
 
 .popular-box {
@@ -294,10 +300,7 @@ background-color: transparent;
     font-weight: 600;
 }
 
-.popular-Load-more:hover {
-    color: var(--white-text-color);
-    background-color: var(--button-background-color);
-}
+
 
 .popular-Load-more {
     display: block;
@@ -313,7 +316,10 @@ background-color: transparent;
     background-color: var(--main-background-color);
 }
 
-
+.popular-Load-more:hover {
+    color: var(--white-text-color);
+    background-color: var(--button-background-color);
+}
 
 .brands-container {
     padding: 55px 82px;
@@ -365,9 +371,7 @@ background-color: transparent;
     font-weight: 500;
     line-height: 1.7;
 }
-.new-tools-button:hover {
-     transform: scaleX(1.1) scaleY(1.1)
- }
+
 .new-tools-button {
     transition: color 0.3s ease;
     padding: 16px 40px;
@@ -378,6 +382,10 @@ background-color: transparent;
     line-height: 1.5;
     will-change: transform, padding, border;
     background-color: var(--button-background-color);
+}
+
+.new-tools-button:hover {
+    transform: scaleX(1.1) scaleY(1.1)
 }
 
 
@@ -391,6 +399,13 @@ background-color: transparent;
     max-width: 601px;
 }
 
+
+
+.new-tools-card {
+    padding: 28px 21px;
+    flex-basis: calc((100% - 24px) / 2);
+}
+
 .new-tools-card:hover {
     border-radius: 15px;
     background-color: var(--second-background-color);
@@ -399,11 +414,6 @@ background-color: transparent;
 .new-tools-card:hover .new-tools-visit {
     background-color: var(--button-background-color);
     border-radius: 8px;
-}
-
-.new-tools-card {
-    padding: 28px 21px;
-    flex-basis: calc((100% - 24px) / 2);
 }
 
 .new-tools-box {
@@ -508,7 +518,7 @@ background-color: transparent;
     justify-content: space-between
 }
 
-.antools-logodisplay{
+.antools-logo{
     display: flex;
         align-items: center;
 }
