@@ -457,6 +457,63 @@ main {
     background-color: var(--main-background-color);
 }
 
+.swiper {
+    width: 1200px;
+    height: 600px;
+}
+.reviews-img{
+    top: 0;
+    left: 150px;
+    position: absolute;
+}
+.reviews-info{
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 370px;
+    padding:10px 23px 16px 22px ;
+    width: 265px;
+        height: 91px;
+        border-radius: 8px;
+        border: 1px rgba(255, 255, 255, 0.10);
+        background: rgba(40, 48, 54, 0.20);
+}
+
+.reviews-mane{
+
+      font-size: 26px;
+        font-weight: 500;
+        letter-spacing: 0.39px;
+       color: rgba(255, 253, 253, 0.78);
+}
+
+.reviews-position{
+    color: rgba(255, 253, 253, 0.55);
+        font-size: 16px;
+        font-weight: 400;
+}
+.reviews-text{
+    margin-left: 580px;
+    margin-top: 250px;
+width: 393px;
+color: rgba(255, 255, 255, 0.78);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.21px;
+}
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--button-background-color);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: var(--accent-hover-color);
+}
+
 
 .contributors {
     padding-bottom: 240px;
