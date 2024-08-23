@@ -55,6 +55,7 @@ body {
 
 
 .nav-link {
+    transition: color 0.3s ease;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -70,6 +71,7 @@ body {
 }
 
 .login-button {
+    transition: color 0.3s ease;
     padding: 12px 28px;
     border-radius: 8px;
     background-color: var(--main-background-color);
@@ -80,10 +82,12 @@ body {
 
 .sign-button:hover {
     transform: scaleX(1.1) scaleY(1.1);
-    will-change: transform, padding, border;
+   
 }
 
 .sign-button {
+    transition: color 0.3s ease;
+    will-change: transform, padding, border;
     padding: 12px 28px;
     border-radius: 8px;
     background-color: var(--button-background-color);
@@ -164,13 +168,14 @@ main {
     color: var(--second-text-color);
 }*/
 
-.hero-submit:hover,{
-color: var(--accent-color);
+.hero-submit:hover{
+color: var(--button-background-color);
 outline: 1px solid var(--accent-color);
 background-color: transparent;
 }
 
 .hero-submit {
+    transition: color 0.3s ease;
     width: 130px;
     height: 48px;
     font-size: 16px;
@@ -291,11 +296,12 @@ background-color: transparent;
 
 .popular-Load-more:hover {
     color: var(--white-text-color);
-    background-color: var(--accent-color);
+    background-color: var(--button-background-color);
 }
 
 .popular-Load-more {
     display: block;
+    transition: color 0.3s ease;
     margin: 100px auto 0 auto;
     color: var(--button-background-color);
     font-size: 20px;
@@ -307,9 +313,7 @@ background-color: transparent;
     background-color: var(--main-background-color);
 }
 
-.brands {
-    padding-bottom: 200px;
-}
+
 
 .brands-container {
     padding: 55px 82px;
@@ -361,10 +365,11 @@ background-color: transparent;
     font-weight: 500;
     line-height: 1.7;
 }
-.new-tools-button :hover {
+.new-tools-button:hover {
      transform: scaleX(1.1) scaleY(1.1)
  }
 .new-tools-button {
+    transition: color 0.3s ease;
     padding: 16px 40px;
     border-radius: 8px;
     color: var(--accent-text-color);
@@ -495,7 +500,8 @@ background-color: transparent;
     background-color: var(--button-background-color);
 }
 .footer{
-            padding: 73px 98px;
+        padding-top: 73px;
+            padding-bottom: 98px;
 }
 .footer-container {
     display: flex;
@@ -512,6 +518,8 @@ background-color: transparent;
 }
 
 .footer-logo {
+    display: flex;
+        align-items: center;
     font-size: 22px;
     font-weight: 600;
     line-height: 1.5;
@@ -527,7 +535,7 @@ background-color: transparent;
 }
 
 .footer-definition {
-        width: 260px
+        width:260px; 
     font-size: 14px;
     font-weight: 400;
     line-height: 1.8;
